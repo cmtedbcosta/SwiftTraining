@@ -10,7 +10,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        VStack(alignment: .leading) {
+            Text("Mercury")
+                .font(Font.custom("Helvetica", size: 20))
+            Text("The swiftest planet")
+                .font(Font.custom("Helvetica", size: 13))
+                .foregroundColor(.gray)
+        }
     }
 }
 
