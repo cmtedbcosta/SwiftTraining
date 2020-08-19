@@ -9,22 +9,22 @@
 import SwiftUI
 
 struct PlanetList: View {
-    let planets: [Planet]
-    
-    // Constructor
-    init(_ planets: [Planet]){
-        self.planets = planets
-    }
+    @State var planets: [Planet]
+    let planetService: PlanetService
     
     var body: some View {
         List(planets) { item in
             PlanetRowView(planet: item)
+        }.onAppear {
+            self.planetService.planets { (planets) in
+                self.planets = planets
+            }
         }
     }
 }
 
 struct PlanetList_Previews: PreviewProvider {
     static var previews: some View {
-        PlanetList(PlanetMockData.planets)
+        PlanetList(planets: PlanetMockData.planets, planetService: PlanetService())
     }
 }
