@@ -9,5 +9,5 @@
 import Foundation
 
 struct PlanetMockData {
-    static let planets: [Planet] = EntityLoader.load("planets")
+    static let planets: [Planet] = EntityLoader.load("planets.json")
 }
