@@ -11,7 +11,9 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         HStack() {
-            Image("Mercury").resizable().frame(width: 60, height: 60)
+            Image("Mercury")
+                .resizable()
+                .frame(width: 60, height: 60)
             VStack(alignment: .leading) {
                 Text("Mercury")
                     .font(Font.custom("Helvetica", size: 20))
@@ -19,6 +21,7 @@ struct ContentView: View {
                     .font(Font.custom("Helvetica", size: 13))
                     .foregroundColor(.gray)
             }
+            Spacer()
         }
     }
 }
@@ -26,5 +29,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .previewLayout(PreviewLayout
+                .fixed(width: 400, height: 80))
     }
 }
