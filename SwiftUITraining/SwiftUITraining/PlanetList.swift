@@ -15,12 +15,14 @@ struct PlanetList: View {
     var body: some View {
         NavigationView {
             List(planets) { item in
-                PlanetRowView(planet: item)
+                NavigationLink(destination: PlanetDetail(planet: item)) {
+                    PlanetRowView(planet: item)
+                }
             }.onAppear {
                 self.planetService.planets { (planets) in
                     self.planets = planets
                 }
-            }
+            }.navigationBarTitle("Planets 🤩")
         }
     }
 }
