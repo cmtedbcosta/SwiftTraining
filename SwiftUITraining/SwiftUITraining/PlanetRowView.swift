@@ -30,7 +30,7 @@ struct PlanetRowView: View {
 
 struct PlanetRowView_Previews: PreviewProvider {
     static var previews: some View {
-        VStack {
+        Group {
             PlanetRowView(planet: PlanetMockData.planets[0])
                 .previewLayout(PreviewLayout
                 .fixed(width: 400, height: 80))

@@ -12,6 +12,7 @@
 		87B4C4C824ED523E00587EE2 /* EntityLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B4C4C724ED523E00587EE2 /* EntityLoader.swift */; };
 		87B4C4CB24ED58A800587EE2 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 87B4C4CA24ED58A800587EE2 /* SDWebImageSwiftUI */; };
 		B61739E124ED53CB000E1CA8 /* PlanetMockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61739E024ED53CB000E1CA8 /* PlanetMockData.swift */; };
+		B6EF2E2B24ED5B360095AE97 /* PlanetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EF2E2A24ED5B360095AE97 /* PlanetList.swift */; };
 		C184F520248A820F00D32F6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C184F51F248A820F00D32F6B /* AppDelegate.swift */; };
 		C184F522248A820F00D32F6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C184F521248A820F00D32F6B /* SceneDelegate.swift */; };
 		C184F524248A820F00D32F6B /* PlanetRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C184F523248A820F00D32F6B /* PlanetRowView.swift */; };
@@ -25,6 +26,7 @@
 		87B4C4C424ED51AB00587EE2 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		87B4C4C724ED523E00587EE2 /* EntityLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityLoader.swift; sourceTree = "<group>"; };
 		B61739E024ED53CB000E1CA8 /* PlanetMockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetMockData.swift; sourceTree = "<group>"; };
+		B6EF2E2A24ED5B360095AE97 /* PlanetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetList.swift; sourceTree = "<group>"; };
 		C184F51C248A820F00D32F6B /* SwiftUITraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C184F51F248A820F00D32F6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C184F521248A820F00D32F6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				C184F51F248A820F00D32F6B /* AppDelegate.swift */,
 				C184F521248A820F00D32F6B /* SceneDelegate.swift */,
 				C184F523248A820F00D32F6B /* PlanetRowView.swift */,
+				B6EF2E2A24ED5B360095AE97 /* PlanetList.swift */,
 				C184F525248A821000D32F6B /* Assets.xcassets */,
 				C184F52A248A821000D32F6B /* LaunchScreen.storyboard */,
 				C184F52D248A821000D32F6B /* Info.plist */,
@@ -185,6 +188,7 @@
 			files = (
 				C184F520248A820F00D32F6B /* AppDelegate.swift in Sources */,
 				C184F522248A820F00D32F6B /* SceneDelegate.swift in Sources */,
+				B6EF2E2B24ED5B360095AE97 /* PlanetList.swift in Sources */,
 				C184F524248A820F00D32F6B /* PlanetRowView.swift in Sources */,
 				87B4C4C824ED523E00587EE2 /* EntityLoader.swift in Sources */,
 				87B4C4C524ED51AB00587EE2 /* Planet.swift in Sources */,
