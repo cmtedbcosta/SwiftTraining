@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Planet {
+struct Planet: Decodable {
     let id: String
     let name: String
     let shortDescription: String

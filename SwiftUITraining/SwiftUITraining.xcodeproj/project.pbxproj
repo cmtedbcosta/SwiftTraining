@@ -10,6 +10,7 @@
 		87B4C4C324ED514B00587EE2 /* planets.json in Resources */ = {isa = PBXBuildFile; fileRef = 87B4C4C224ED514B00587EE2 /* planets.json */; };
 		87B4C4C524ED51AB00587EE2 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B4C4C424ED51AB00587EE2 /* Planet.swift */; };
 		87B4C4C824ED523E00587EE2 /* EntityLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B4C4C724ED523E00587EE2 /* EntityLoader.swift */; };
+		B61739E124ED53CB000E1CA8 /* PlanetMockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61739E024ED53CB000E1CA8 /* PlanetMockData.swift */; };
 		C184F520248A820F00D32F6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C184F51F248A820F00D32F6B /* AppDelegate.swift */; };
 		C184F522248A820F00D32F6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C184F521248A820F00D32F6B /* SceneDelegate.swift */; };
 		C184F524248A820F00D32F6B /* PlanetRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C184F523248A820F00D32F6B /* PlanetRowView.swift */; };
@@ -22,6 +23,7 @@
 		87B4C4C224ED514B00587EE2 /* planets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = planets.json; sourceTree = "<group>"; };
 		87B4C4C424ED51AB00587EE2 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		87B4C4C724ED523E00587EE2 /* EntityLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityLoader.swift; sourceTree = "<group>"; };
+		B61739E024ED53CB000E1CA8 /* PlanetMockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetMockData.swift; sourceTree = "<group>"; };
 		C184F51C248A820F00D32F6B /* SwiftUITraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C184F51F248A820F00D32F6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C184F521248A820F00D32F6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 			children = (
 				87B4C4C224ED514B00587EE2 /* planets.json */,
 				87B4C4C424ED51AB00587EE2 /* Planet.swift */,
+				B61739E024ED53CB000E1CA8 /* PlanetMockData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				C184F524248A820F00D32F6B /* PlanetRowView.swift in Sources */,
 				87B4C4C824ED523E00587EE2 /* EntityLoader.swift in Sources */,
 				87B4C4C524ED51AB00587EE2 /* Planet.swift in Sources */,
+				B61739E124ED53CB000E1CA8 /* PlanetMockData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
