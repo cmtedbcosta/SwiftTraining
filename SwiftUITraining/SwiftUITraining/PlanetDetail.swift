@@ -24,14 +24,16 @@ struct PlanetDetail: View {
                 Text(planet.shortDescription)
                     .font(Font.custom("Helvetica", size: 18))
                     .foregroundColor(.white)
+                    .padding(.horizontal, 16)
+                    .multilineTextAlignment(.center)
                 Spacer()
             }
-        }
+        }.padding(.top, -40)
     }
 }
 
 struct PlanetDetail_Previews: PreviewProvider {
     static var previews: some View {
-        PlanetDetail(planet: PlanetMockData.planets[0])
+        PlanetDetail(planet: PlanetMockData.planets[1])
     }
 }
