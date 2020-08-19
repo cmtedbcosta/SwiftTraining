@@ -8,4 +8,14 @@
 
 import Foundation
 
+class PlanetServiceFailingStub : PlanetServiceProtocol {
+    func planets(closure: @escaping ([Planet]) -> Void) {
+        closure([])
+    }
+}
 
+class PlanetServiceSucceedingStub: PlanetServiceProtocol {
+    func planets(closure: @escaping ([Planet]) -> Void) {
+        closure(PlanetMockData.planets)
+    }
+}

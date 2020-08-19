@@ -10,7 +10,7 @@ import SwiftUI
 
 struct PlanetList: View {
     @State private var planets: [Planet] = []
-    let planetService: PlanetService
+    let planetService: PlanetServiceProtocol
     
     var body: some View {
         List(planets) { item in
@@ -25,6 +25,6 @@ struct PlanetList: View {
 
 struct PlanetList_Previews: PreviewProvider {
     static var previews: some View {
-        PlanetList(planetService: PlanetService())
+        PlanetList(planetService: PlanetServiceSucceedingStub())
     }
 }
