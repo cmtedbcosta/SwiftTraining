@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct PlanetRowView: View {
     var body: some View {
         HStack() {
             Image("Mercury")
@@ -26,9 +26,9 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct PlanetRowView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        PlanetRowView()
             .previewLayout(PreviewLayout
                 .fixed(width: 400, height: 80))
     }
