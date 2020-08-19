@@ -9,7 +9,11 @@
 import Foundation
 import Alamofire
 
-class PlanetService {
+protocol PlanetServiceProtocol {
+    func planets(closure: @escaping ([Planet]) -> Void)
+}
+
+class PlanetService : PlanetServiceProtocol{
     let baseUrl = "https://y3fsc8hysh.execute-api.us-east-2.amazonaws.com/training/planets"
     
     func planets(closure: @escaping ([Planet]) -> Void) {

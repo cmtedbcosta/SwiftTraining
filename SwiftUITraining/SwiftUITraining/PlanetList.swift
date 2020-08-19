@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct PlanetList: View {
-    @State var planets: [Planet]
+    @State private var planets: [Planet] = []
     let planetService: PlanetService
     
     var body: some View {
@@ -25,6 +25,6 @@ struct PlanetList: View {
 
 struct PlanetList_Previews: PreviewProvider {
     static var previews: some View {
-        PlanetList(planets: PlanetMockData.planets, planetService: PlanetService())
+        PlanetList(planetService: PlanetService())
     }
 }
