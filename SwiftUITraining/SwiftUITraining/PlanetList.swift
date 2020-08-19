@@ -25,6 +25,9 @@ struct PlanetList: View {
 
 struct PlanetList_Previews: PreviewProvider {
     static var previews: some View {
-        PlanetList(planetService: PlanetServiceSucceedingStub())
+        Group {
+            PlanetList(planetService: PlanetServiceSucceedingStub())
+            PlanetList(planetService: PlanetServiceFailingStub())
+        }
     }
 }
