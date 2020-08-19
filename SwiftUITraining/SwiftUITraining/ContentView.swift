@@ -10,12 +10,15 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("Mercury")
-                .font(Font.custom("Helvetica", size: 20))
-            Text("The swiftest planet")
-                .font(Font.custom("Helvetica", size: 13))
-                .foregroundColor(.gray)
+        HStack() {
+            Image("Mercury").resizable().frame(width: 60, height: 60)
+            VStack(alignment: .leading) {
+                Text("Mercury")
+                    .font(Font.custom("Helvetica", size: 20))
+                Text("The swiftest planet")
+                    .font(Font.custom("Helvetica", size: 13))
+                    .foregroundColor(.gray)
+            }
         }
     }
 }
