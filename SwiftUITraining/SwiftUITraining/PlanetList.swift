@@ -13,11 +13,13 @@ struct PlanetList: View {
     let planetService: PlanetServiceProtocol
     
     var body: some View {
-        List(planets) { item in
-            PlanetRowView(planet: item)
-        }.onAppear {
-            self.planetService.planets { (planets) in
-                self.planets = planets
+        NavigationView {
+            List(planets) { item in
+                PlanetRowView(planet: item)
+            }.onAppear {
+                self.planetService.planets { (planets) in
+                    self.planets = planets
+                }
             }
         }
     }
