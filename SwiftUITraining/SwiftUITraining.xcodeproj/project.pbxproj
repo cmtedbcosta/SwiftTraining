@@ -77,6 +77,16 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		B2467BAE24EE567D00CCC540 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B26230C924ED6D450052B474 /* PlanetDetail.swift */,
+				C184F523248A820F00D32F6B /* PlanetRowView.swift */,
+				B6EF2E2A24ED5B360095AE97 /* PlanetList.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		C184F513248A820F00D32F6B = {
 			isa = PBXGroup;
 			children = (
@@ -96,17 +106,15 @@
 		C184F51E248A820F00D32F6B /* SwiftUITraining */ = {
 			isa = PBXGroup;
 			children = (
+				B2467BAE24EE567D00CCC540 /* Views */,
 				87B4C4C624ED523E00587EE2 /* Helpers */,
 				87B4C4C124ED514B00587EE2 /* Data */,
 				C184F51F248A820F00D32F6B /* AppDelegate.swift */,
 				C184F521248A820F00D32F6B /* SceneDelegate.swift */,
-				C184F523248A820F00D32F6B /* PlanetRowView.swift */,
-				B6EF2E2A24ED5B360095AE97 /* PlanetList.swift */,
 				C184F525248A821000D32F6B /* Assets.xcassets */,
 				C184F52A248A821000D32F6B /* LaunchScreen.storyboard */,
 				C184F52D248A821000D32F6B /* Info.plist */,
 				C184F527248A821000D32F6B /* Preview Content */,
-				B26230C924ED6D450052B474 /* PlanetDetail.swift */,
 			);
 			path = SwiftUITraining;
 			sourceTree = "<group>";

@@ -20,8 +20,10 @@ class PlanetService : PlanetServiceProtocol{
         AF.request(baseUrl).responseDecodable(of: [Planet].self) { response in
             switch response.result {
                 case .success(let planets):
-                    closure(planets)
-                case .failure(let error):
+                    closure(planets.sorted {
+                        $0.distanceFromSun < $1.distanceFromSun
+                    })
+            case .failure(let error):
                     print(error)
             }
         }

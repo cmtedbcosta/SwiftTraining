@@ -22,7 +22,7 @@ struct PlanetList: View {
                 self.planetService.planets { (planets) in
                     self.planets = planets
                 }
-            }.navigationBarTitle("Planets 🤩")
+            }.navigationBarTitle("Planets")
         }
     }
 }
