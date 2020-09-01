@@ -13,6 +13,9 @@ struct Planet: Decodable, Identifiable {
     let name: String
     let shortDescription: String
     let imageUrl: URL
-    let distanceFromSun: Decimal
+    let distanceFromSun: Double
+    let description: String?
+    let planetType: String?
+    let surfaceGravity: Double?
 }
 

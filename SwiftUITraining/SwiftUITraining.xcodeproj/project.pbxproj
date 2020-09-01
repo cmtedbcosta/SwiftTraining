@@ -15,6 +15,8 @@
 		87B4C4D024ED606A00587EE2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 87B4C4CF24ED606A00587EE2 /* Alamofire */; };
 		87B4C4D224ED6A6800587EE2 /* PlanetServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B4C4D124ED6A6800587EE2 /* PlanetServiceStub.swift */; };
 		B26230CA24ED6D450052B474 /* PlanetDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26230C924ED6D450052B474 /* PlanetDetail.swift */; };
+		B29F6F9B24FE27A3006B782B /* PlanetDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29F6F9A24FE27A3006B782B /* PlanetDetailHeaderView.swift */; };
+		B29F6F9D24FE27BC006B782B /* PlanetDetailRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29F6F9C24FE27BC006B782B /* PlanetDetailRowView.swift */; };
 		B61739E124ED53CB000E1CA8 /* PlanetMockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61739E024ED53CB000E1CA8 /* PlanetMockData.swift */; };
 		B6EF2E2B24ED5B360095AE97 /* PlanetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EF2E2A24ED5B360095AE97 /* PlanetList.swift */; };
 		C184F520248A820F00D32F6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C184F51F248A820F00D32F6B /* AppDelegate.swift */; };
@@ -32,6 +34,8 @@
 		87B4C4CC24ED602300587EE2 /* PlanetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetService.swift; sourceTree = "<group>"; };
 		87B4C4D124ED6A6800587EE2 /* PlanetServiceStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetServiceStub.swift; sourceTree = "<group>"; };
 		B26230C924ED6D450052B474 /* PlanetDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDetail.swift; sourceTree = "<group>"; };
+		B29F6F9A24FE27A3006B782B /* PlanetDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDetailHeaderView.swift; sourceTree = "<group>"; };
+		B29F6F9C24FE27BC006B782B /* PlanetDetailRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDetailRowView.swift; sourceTree = "<group>"; };
 		B61739E024ED53CB000E1CA8 /* PlanetMockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetMockData.swift; sourceTree = "<group>"; };
 		B6EF2E2A24ED5B360095AE97 /* PlanetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetList.swift; sourceTree = "<group>"; };
 		C184F51C248A820F00D32F6B /* SwiftUITraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +87,8 @@
 				B26230C924ED6D450052B474 /* PlanetDetail.swift */,
 				C184F523248A820F00D32F6B /* PlanetRowView.swift */,
 				B6EF2E2A24ED5B360095AE97 /* PlanetList.swift */,
+				B29F6F9A24FE27A3006B782B /* PlanetDetailHeaderView.swift */,
+				B29F6F9C24FE27BC006B782B /* PlanetDetailRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -209,6 +215,7 @@
 			files = (
 				87B4C4D224ED6A6800587EE2 /* PlanetServiceStub.swift in Sources */,
 				C184F520248A820F00D32F6B /* AppDelegate.swift in Sources */,
+				B29F6F9B24FE27A3006B782B /* PlanetDetailHeaderView.swift in Sources */,
 				B26230CA24ED6D450052B474 /* PlanetDetail.swift in Sources */,
 				C184F522248A820F00D32F6B /* SceneDelegate.swift in Sources */,
 				B6EF2E2B24ED5B360095AE97 /* PlanetList.swift in Sources */,
@@ -216,6 +223,7 @@
 				C184F524248A820F00D32F6B /* PlanetRowView.swift in Sources */,
 				87B4C4C824ED523E00587EE2 /* EntityLoader.swift in Sources */,
 				87B4C4C524ED51AB00587EE2 /* Planet.swift in Sources */,
+				B29F6F9D24FE27BC006B782B /* PlanetDetailRowView.swift in Sources */,
 				B61739E124ED53CB000E1CA8 /* PlanetMockData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

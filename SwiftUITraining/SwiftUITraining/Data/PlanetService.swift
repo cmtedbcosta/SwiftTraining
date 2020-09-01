@@ -11,6 +11,7 @@ import Alamofire
 
 protocol PlanetServiceProtocol {
     func planets(closure: @escaping ([Planet]) -> Void)
+    func planetDetail(id: String, closure: @escaping (Planet) -> Void)
 }
 
 class PlanetService : PlanetServiceProtocol{
@@ -23,6 +24,17 @@ class PlanetService : PlanetServiceProtocol{
                     closure(planets.sorted {
                         $0.distanceFromSun < $1.distanceFromSun
                     })
+            case .failure(let error):
+                    print(error)
+            }
+        }
+    }
+    
+    func planetDetail(id: String, closure: @escaping (Planet) -> Void) {
+        AF.request(baseUrl + "/" + id).responseDecodable(of: Planet.self) { response in
+            switch response.result {
+                case .success(let planet):
+                    closure(planet)
             case .failure(let error):
                     print(error)
             }

@@ -9,12 +9,20 @@
 import Foundation
 
 class PlanetServiceFailingStub : PlanetServiceProtocol {
+    func planetDetail(id: String, closure: @escaping (Planet) -> Void) {
+        closure(PlanetMockData.planets[0])
+    }
+    
     func planets(closure: @escaping ([Planet]) -> Void) {
         closure([])
     }
 }
 
 class PlanetServiceSucceedingStub: PlanetServiceProtocol {
+    func planetDetail(id: String, closure: @escaping (Planet) -> Void) {
+        closure(PlanetMockData.planets[0])
+    }
+    
     func planets(closure: @escaping ([Planet]) -> Void) {
         closure(PlanetMockData.planets)
     }

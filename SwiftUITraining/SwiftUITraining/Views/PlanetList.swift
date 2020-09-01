@@ -15,8 +15,10 @@ struct PlanetList: View {
     var body: some View {
         NavigationView {
             List(planets) { item in
-                NavigationLink(destination: PlanetDetail(planet: item)) {
-                    PlanetRowView(planet: item)
+                NavigationLink(
+                    destination: PlanetDetail(
+                        planet: item, planetService: self.planetService)){
+                            PlanetRowView(planet: item)
                 }
             }.onAppear {
                 self.planetService.planets { (planets) in
